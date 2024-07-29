@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css">
+    <title>Porfolio</title>
+</head>
+
+<body>
+
+    <header class="flexrow header">
+
+        <nav class="flexrow header__nav">
+
+            <div class="header__title">
+                <span>Espindola Javier</span>
+            </div>
+
+            <ul class="flexrow header__nav--items">
+                <li>
+                    <a href="#">inicio</a>
+                </li>
+                <li>
+                    <a href="#">acerca de mi</a>
+                </li>
+                <li>
+                    <a href="#">porfolio</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <div class="header__menu">
+            <i class="ri-menu-line"></i>
+            <i class="ri-close-line"></i>
+        </div>
+
+    </header>
+
+    <main class="flexcolum  main">
+
+        <section class="home">
+
+            <p class="home__about">full stack developer</p>
+            <h1 class="home__name">Javier Espindola</h1>
+
+            <div class="flexcolum home__aboutContainer">
+                <p class="flexrow home__email"><span>espindolajavier2013@gmail</span><i class="ri-file-copy-line"></i>
+                </p>
+                <a href="" class="flexrow home__github"><span>gitHub</span>
+                    <i class="ri-github-fill"></i>
+                </a>
+                <a href="" class="flexrow home__linkedin">
+                    <span>linkedin</span>
+                    <i class="ri-linkedin-box-fill"></i>
+                </a>
+                <!-- <button class="home__download .btn-101"></button> -->
+                <button class=" btn-101 home__download">
+                    descargar CV
+                    <svg>
+                        <defs>
+                            <filter id="glow">
+                                <fegaussianblur result="coloredBlur" stddeviation="5"></fegaussianblur>
+                                <femerge>
+                                    <femergenode in="coloredBlur"></femergenode>
+                                    <femergenode in="coloredBlur"></femergenode>
+                                    <femergenode in="coloredBlur"></femergenode>
+                                    <femergenode in="SourceGraphic"></femergenode>
+                                </femerge>
+                            </filter>
+                        </defs>
+                        <rect />
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+        <section class="about">
+
+            <section class="about__profile">
+                <div class="about__profile--img">
+                    <img src="" alt="">
+                </div>
+
+                <div class="about__profile--description">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio quidem quasi quaerat nobis, quis
+                        unde
+                        aliquam ullam magnam quam. Quibusdam modi, nihil ratione distinctio libero dolor architecto cum
+                        quo
+                        corporis?</p>
+                </div>
+
+            </section>
+
+            <div class="about__skills">
+                <h3 class="about__skills-title">
+                    Lenguajes de Programación
+                </h3>
+                <div class="about__skills-content grid">
+                    <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/de91fca307a83d75fc5b1f6ce24540454acead41/icons/Java-Light.svg"
+                        alt="Java" class="about__skills-img" title="Java" />
+                    <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/de91fca307a83d75fc5b1f6ce24540454acead41/icons/JavaScript.svg"
+                        alt="JavaScript" class="about__skills-img" title="JavaScript" />
+                    <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/de91fca307a83d75fc5b1f6ce24540454acead41/icons/Python-Light.svg"
+                        alt="Python" class="about__skills-img" title="Python" />
+                    <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/de91fca307a83d75fc5b1f6ce24540454acead41/icons/C.svg"
+                        alt="C" class="about__skills-img" title="C" />
+                    <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/de91fca307a83d75fc5b1f6ce24540454acead41/icons/CPP.svg"
+                        alt="CPP" class="about__skills-img" title="C++" />
+                    <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/de91fca307a83d75fc5b1f6ce24540454acead41/icons/Kotlin-Dark.svg"
+                        alt="Kotlin" class="about__skills-img" title="Kotlin" />
+                </div>
+                <h3 class="about__skills-title">
+                    Frontend
+                </h3>
+                <div class="about__skills-content grid">
+
+                    <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/de91fca307a83d75fc5b1f6ce24540454acead41/icons/HTML.svg"
+                        alt="HTML5" class="about__skills-img" title="HTML5" />
+                    <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/de91fca307a83d75fc5b1f6ce24540454acead41/icons/CSS.svg"
+                        alt="CSS3" class="about__skills-img" title="CSS3" />
+                    <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/de91fca307a83d75fc5b1f6ce24540454acead41/icons/Bootstrap.svg"
+                        alt="Bootstrap" class="about__skills-img" title="Bootstrap" />
+
+                </div>
+
+                <h3 class="about__skills-title">
+                    IDEs
+                </h3>
+                <div class="about__skills-content grid">
+
+                    <img src="images/netBeans-icon.png" alt="Apache NetBeans" class="about__skills-img"
+                        title="NetBeans" />
+                    <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/de91fca307a83d75fc5b1f6ce24540454acead41/icons/VSCode-Light.svg"
+                        alt="VSCode" class="about__skills-img" title="VSCode" />
+                    <img src="https://user-images.githubusercontent.com/25181517/192108890-200809d1-439c-4e23-90d3-b090cf9a4eea.png"
+                        alt="Intellij" class="about__skills-img" title="Intellij" />
+                    <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/de91fca307a83d75fc5b1f6ce24540454acead41/icons/Anaconda-Light.svg"
+                        alt="Anaconda" class="about__skills-img" title="Anaconda" />
+                    <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/de91fca307a83d75fc5b1f6ce24540454acead41/icons/AndroidStudio-Light.svg"
+                        alt="AndroidStudio" class="about__skills-img" title="AndroidStudio" />
+                    <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/de91fca307a83d75fc5b1f6ce24540454acead41/icons/VisualStudio-Light.svg"
+                        alt="VisualStudio" class="about__skills-img" title="VisualStudio" />
+                </div>
+
+                <h3 class="about__skills-title">
+                    Database Management System
+                </h3>
+
+                <div class="about__skills-content grid">
+                    <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/de91fca307a83d75fc5b1f6ce24540454acead41/icons/MySQL-Light.svg"
+                        alt="MySQL" class="about__skills-img" title="MySQL" />
+                    <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/de91fca307a83d75fc5b1f6ce24540454acead41/icons/MongoDB.svg"
+                        alt="MongoDB" class="about__skills-img" title="MongoDB" />
+                    <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/de91fca307a83d75fc5b1f6ce24540454acead41/icons/SQLite.svg"
+                        alt="SQLite" class="about__skills-img" title="SQLite" />
+                </div>
+
+                <h3 class="about__skills-title">
+                    Software & Tools
+                </h3>
+
+                <div class="about__skills-content grid">
+                    <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/de91fca307a83d75fc5b1f6ce24540454acead41/icons/Git.svg"
+                        alt="Git" class="about__skills-img" title="Git" />
+                    <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/de91fca307a83d75fc5b1f6ce24540454acead41/icons/Postman.svg"
+                        alt="Postman" class="about__skills-img" title="Postman" />
+                </div>
+
+                <h3 class="about__skills-title">
+                    Java Technology
+                </h3>
+
+                <div class="about__skills-content grid">
+                    <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/de91fca307a83d75fc5b1f6ce24540454acead41/icons/Spring-Light.svg"
+                        alt="Spring" class="about__skills-img" title="Spring Framework" />
+                    <img src="https://user-images.githubusercontent.com/25181517/183891303-41f257f8-6b3d-487c-aa56-c497b880d0fb.png"
+                        alt="Sprintboot" class="about__skills-img" title="Sprintboot" />
+                    <img src="https://user-images.githubusercontent.com/25181517/117207493-49665200-adf4-11eb-808e-a9c0fcc2a0a0.png"
+                        alt="Hibernate" class="about__skills-img" title="Hibernate" />
+                    <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/de91fca307a83d75fc5b1f6ce24540454acead41/icons/Maven-Light.svg"
+                        alt="Maven" class="about__skills-img" title="Maven" />
+                </div>
+
+                <h3 class="about__skills-title">
+                    JavaScript Technology
+                </h3>
+
+                <div class="about__skills-content grid">
+                    <img src="https://user-images.githubusercontent.com/25181517/183859966-a3462d8d-1bc7-4880-b353-e2cbed900ed6.png"
+                        alt="ExpressJS" class="about__skills-img" title="ExpressJS" />
+                    <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/de91fca307a83d75fc5b1f6ce24540454acead41/icons/NodeJS-Light.svg"
+                        alt="NodeJS" class="about__skills-img" title="NodeJS" />
+                    <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/de91fca307a83d75fc5b1f6ce24540454acead41/icons/Vite-Light.svg"
+                        alt="Vite" class="about__skills-img" title="Vite" />
+                    <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/de91fca307a83d75fc5b1f6ce24540454acead41/icons/React-Light.svg"
+                        alt="React" class="about__skills-img" title="React" />
+                </div>
+            </div>
+
+
+            <section class="modal">
+                <div class="modal__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nihil voluptatibus atque aliquid
+                    iusto tempora qui reiciendis voluptates accusantium. Dolorum, tempore. Distinctio dolores fugit
+                    dolor soluta blanditiis corporis voluptate iusto!
+                </div>
+                <div class="modal__detail">
+                    <div class="modal__detail--img"><img src="" alt=""></div>
+                    <p class="modal__detail--p">
+                        <span>Lorem, ipsum.</span>
+                        <span>lorem</span>
+                    </p>
+                </div>
+            </section>
+
+        </section>
+
+        <section class="porfolio">
+            <h2 class="porfolio__title">porfolio</h2>
+            <section class="porfolio__cards">
+                <div class="porfolio__cards--card pcccard">
+                    <div class="pcccard__img"><img src="" alt=""></div>
+                    <div class="pcccard__detail">
+                        <span>Lorem, ipsum dolor.</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum veniam atque cumque ipsam at
+                            illo saepe itaque maxime laborum veritatis!</p>
+                        <span>Lorem, ipsum dolor.</span>
+                        <div>
+                            <i>icono </i>
+                            <i>icono </i>
+                            <i>icono </i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div class="footer__content grid">
+                <a href="index.html" class="footer__logo">Javier Espindola</a>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="about.html" class=" footer__link">Acerca de mí</a>
+                    </li>
+                    <li>
+                        <a href="work.html" class="footer__link">Porfolio</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="footer__link">Contáctame</a>
+                    </li>
+                </ul>
+
+                <div class="footer__social">
+                    <a href="https://www.linkedin.com/in/javier-espindola/" target="_blank"
+                        class="footer__social-link"><i class="ri-linkedin-box-fill"></i></a>
+                    <a href="https://github.com/Micolash89" target="_blank" class="footer__social-link"> <i
+                            class="ri-github-fill"></i></a>
+                </div>
+            </div>
+
+            <span class="footer__copy">&#169; All Rigths Reserved By Javier Espindola</span>
+
+        </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
