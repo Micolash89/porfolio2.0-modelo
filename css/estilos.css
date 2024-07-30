@@ -58,7 +58,7 @@ body {
 
 .home__about {
   text-transform: uppercase;
-  font-size: var(--txt-17);
+  font-size: var(--txt-23);
   color: var(--ligth-white-300);
 }
 
@@ -255,10 +255,11 @@ body {
 
 .about__profile--title {
   text-transform: uppercase;
-  font-size: var(--txt-17);
+  font-size: var(--txt-26);
   color: var(--ligth-white-300);
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+  margin-bottom: 1.5rem;
 }
 
 .about__profile--title::before {
@@ -335,15 +336,16 @@ body {
 /*porfolio*/
 
 .porfolio {
-  padding: 100px 50px 0;
+  padding: 100px 50px 100px;
 }
 
 .porfolio__title {
   text-transform: uppercase;
-  font-size: var(--txt-17);
+  font-size: var(--txt-26);
   color: var(--ligth-white-300);
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+  margin-bottom: 1.5rem;
 }
 
 .porfolio__title::before {
@@ -364,12 +366,13 @@ body {
 .pcccard {
   max-width: 250px;
   min-width: 250px;
-  max-height: 345px;
-  min-height: 345px;
-  background-color: var(--ligth-white-400);
-  border-radius: var(--radius-7);
+  max-height: 360px;
+  min-height: 360px;
+  background-color: var(--dark-black-100);
+  box-shadow: 7px 7px 30px 0px var(--box-shadow-white);
+  border-radius: var(--radius-4);
 }
-.pcccard:hover > .pcccard__img > img {
+.pcccard__img:hover > img {
   transform: scale(1.2);
   filter: none;
 }
@@ -387,12 +390,13 @@ body {
 .pcccard__detail {
   text-align: center;
   gap: 10px;
-  color: var(--dark-black-600);
+  color: var(--ligth-grey-600);
   font-size: var(--txt-12);
+  font-weight: 600;
 }
 
 .pcccard__detail > h4 {
-  color: var(--dark-black-100);
+  color: var(--ligth-white-400);
   font-weight: bold;
   font-size: var(--txt-22);
 }
@@ -402,6 +406,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  padding: 5px 10px;
 }
 
 .work__imgContainer div {
@@ -412,7 +417,7 @@ body {
 }
 
 .work__subtitle {
-  color: var(--dark-black-600);
+  color: var(--ligth-grey-600);
 }
 
 .work__imgContainer--icon {
@@ -426,20 +431,29 @@ body {
 }
 
 .pcccard__buttonLoad {
-  background-color: var(--ligth-white-400);
   width: fit-content;
   align-self: center;
+  color: var(--ligth-grey-600);
+  background-color: var(--dark-black-100);
+  cursor: pointer;
+}
+
+.pcccard__buttonLoad:hover > span {
+  text-decoration-line: underline;
+  text-decoration-color: var(--ligth-grey-600);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
 }
 
 /*footer*/
 .footer {
-  background-color: var(--first-color);
+  background-color: var(--ligth-white-100);
 }
 
 .footer__container {
-  padding-block: 4rem 2rem;
+  padding-block: 1.7rem 2rem;
   text-align: center;
-  row-gap: 5rem;
+  row-gap: 1.5rem;
 }
 
 .footer__content {
@@ -448,13 +462,7 @@ body {
 
 .footer__content a,
 .footer__copy {
-  color: var(--white-color);
-}
-
-.footer__logo {
-  font-size: var(--h1-font-size);
-  font-weight: var(--font-semi-bold);
-  justify-self: center;
+  color: var(--dark-black-600);
 }
 
 .footer__links,
@@ -479,7 +487,7 @@ body {
 
 .footer__social-link {
   /* colocar Sombra */
-  font-size: 1.5rem;
+  font-size: var(--txt-40);
   transition: transform 0.4s;
 }
 
@@ -488,6 +496,6 @@ body {
 }
 
 .footer__copy {
-  font-size: var(--small-font-size);
-  font-weight: var(--font-medium);
+  font-size: var(--txt-13);
+  font-weight: 500;
 }

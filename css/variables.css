@@ -34,7 +34,7 @@
   --dark-red-200: #fef6fb;
 
   --box-shadow-black: rgba(0, 0, 0, 0.349);
-  --box-shadow-white: rgba(255, 255, 255, 0.705);
+  --box-shadow-white: rgba(255, 255, 255, 0.26);
 
   /*cambiar*/
   --txt-10: 0.625rem; /*10px*/
@@ -53,6 +53,7 @@
   --txt-23: 1.438rem; /*23px*/
   --txt-24: 1.5rem; /*24px*/
   --txt-25: 1.563rem; /*25px*/
+  --txt-26: 1.625rem; /*26px*/
   --txt-30: 1.875rem; /*30px*/
   --txt-35: 2.188rem; /*35px*/
   --txt-40: 2.5rem; /*40px*/
