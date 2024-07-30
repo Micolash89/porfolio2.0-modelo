@@ -21,7 +21,6 @@ body {
 
 .header {
   width: 100%;
-  /* justify-content: space-between; */
   padding: 30px;
 }
 
@@ -39,7 +38,7 @@ body {
   text-transform: capitalize;
   color: var(--ligth-white-100);
   font-weight: 400;
-  font-size: var(--txt-15);
+  font-size: var(--txt-17);
 }
 
 .header__menu {
@@ -291,6 +290,9 @@ body {
 .about__profile--img {
   width: 150px;
   height: 200px;
+  outline: 2px solid var(--dark-black-600);
+  background-color: var(--dark-black-100);
+  padding: 10px;
 }
 .about__profile--img > img {
   width: 150px;
@@ -298,6 +300,23 @@ body {
   min-width: 150px;
   object-fit: cover;
   filter: grayscale(1);
+  transition: transform 0.6s ease;
+}
+.about__profile--img > img:hover {
+  transform: translateY(-30px) translateX(-30px);
+  filter: grayscale(0);
+}
+
+.about__skills-img {
+  width: 40px;
+  min-width: 40px;
+  transition: transform 0.4s ease;
+  filter: grayscale(1);
+}
+
+.about__skills-img:hover {
+  transform: translateY(-0.5rem);
+  filter: grayscale(0);
 }
 
 /*porfolio*/
@@ -332,10 +351,10 @@ body {
 }
 
 .pcccard {
-  max-width: 250px;
-  min-width: 250px;
-  max-height: 360px;
-  min-height: 360px;
+  max-width: 240px;
+  min-width: 240px;
+  max-height: 335px;
+  min-height: 335px;
   background-color: var(--dark-black-100);
   box-shadow: 7px 7px 30px 0px var(--box-shadow-white);
   border-radius: var(--radius-4);
@@ -372,9 +391,9 @@ body {
 .work__imgContainer {
   margin-top: 1rem;
   display: flex;
-  flex-wrap: wrap;
   gap: 10px;
   padding: 5px 10px;
+  overflow: hidden;
 }
 
 .work__imgContainer div {
@@ -427,6 +446,7 @@ body {
   color: var(--ligth-grey-600);
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+  margin-bottom: 5rem;
 }
 
 .technology__title::before {
@@ -449,7 +469,7 @@ body {
 .technology__h3::first-letter {
   text-transform: uppercase;
 }
-.about__page {
+/* .about__page {
   padding-bottom: 4rem;
 }
 
@@ -468,29 +488,21 @@ body {
 .about__info {
   row-gap: 0.75rem;
   text-align: center;
-}
+} */
 
-.about__name {
-  font-size: var(--h1-font-size);
-}
-
-.about__profession {
-  font-size: var(--h2-font-size);
-}
-
-.about__description b {
+/* .about__description b {
   color: var(--first-color);
 }
 
 .about__button {
   justify-self: center;
-}
+} */
 
-.about__skills-title {
+/* .about__skills-title {
   font-size: var(--h3-font-size);
   text-align: center;
   margin: 1rem 0;
-}
+} */
 
 .about__skills-img {
   width: 40px;
@@ -514,12 +526,57 @@ body {
 
 .about__skills-content {
   /* grid-template-columns: repeat(7, max-content); */
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
+  animation: 35s slide infinite linear;
 }
 .about__skills-content > div {
   border: 1px solid var(--ligth-white-500);
-  padding: 30px;
+  padding: 40px;
+}
+
+/* about__skills = logo 
+about__skills-content = logo-slide */
+
+/*animacion technology*/
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-450%);
+  }
+}
+
+.about__skills {
+  overflow: hidden;
+  position: relative;
+}
+
+.about__skills-content:hover {
+  animation-play-state: paused;
+}
+
+.about__skills:before,
+.about__skills:after {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+  pointer-events: none;
+}
+
+.about__skills:before {
+  left: 0px;
+  background: linear-gradient(to left, transparent, var(--ligth-white-100));
+}
+.about__skills:after {
+  right: 0px;
+  background: linear-gradient(to right, transparent, var(--ligth-white-100));
 }
 
 /*footer*/
