@@ -4,6 +4,15 @@
 
     document.querySelector(".about__skills").appendChild(copy);
 
+    /*repetir para todos ver como hacerlo xd*/
+
+    let copy2 = [];
+
+    document.querySelectorAll(".work__imgCarrousel").forEach(e => copy2.push(e.cloneNode(true)));
+
+    console.log(document.querySelectorAll(".work__imgCarrousel"));
+
+    document.querySelectorAll(".work__imgContainerCarrousel").forEach((e, i) => e.appendChild(copy2[i]));
 
     const scrollUp = () => {
         const scrollUp = document.getElementById('scroll-up')

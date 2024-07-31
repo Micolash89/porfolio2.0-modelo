@@ -348,6 +348,7 @@ body {
 
 .porfolio__cards {
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .pcccard {
@@ -355,8 +356,9 @@ body {
   min-width: 240px;
   max-height: 335px;
   min-height: 335px;
+  margin: 30px 30px 0 0;
   background-color: var(--dark-black-100);
-  box-shadow: 7px 7px 30px 0px var(--box-shadow-white);
+  box-shadow: 7px 7px 25px 0px var(--box-shadow-white);
   border-radius: var(--radius-4);
 }
 .pcccard__img:hover > img {
@@ -391,9 +393,6 @@ body {
 .work__imgContainer {
   margin-top: 1rem;
   display: flex;
-  gap: 10px;
-  padding: 5px 10px;
-  overflow: hidden;
 }
 
 .work__imgContainer div {
@@ -430,6 +429,48 @@ body {
   text-decoration-color: var(--ligth-grey-600);
   text-decoration-thickness: 2px;
   text-underline-offset: 5px;
+}
+
+/*---porfolio animation-----*/
+/* work__imgContainerCarrousel = logo 
+work__imgCarrousel = logo-slide */
+
+.work__imgCarrousel {
+  animation: 5s slide infinite linear;
+  animation-play-state: paused;
+}
+
+.work__imgCarrousel > div {
+  padding: 5px;
+}
+
+.work__imgContainerCarrousel {
+  overflow: hidden;
+  position: relative;
+}
+
+.pcccard:hover > .work__imgContainerCarrousel > .work__imgCarrousel {
+  animation-play-state: running;
+}
+
+.work__imgContainerCarrousel:before,
+.work__imgContainerCarrousel:after {
+  position: absolute;
+  top: 0;
+  width: 25px;
+  height: 80px;
+  content: "";
+  z-index: 2;
+  pointer-events: none;
+}
+
+.work__imgContainerCarrousel:before {
+  left: 0px;
+  background: linear-gradient(to left, transparent, var(--dark-black-100));
+}
+.work__imgContainerCarrousel:after {
+  right: 0px;
+  background: linear-gradient(to right, transparent, var(--dark-black-100));
 }
 
 /*technology*/
@@ -524,9 +565,11 @@ body {
   filter: grayscale(0);
 }
 
+/*animacion technology*/
+/* about__skills = logo 
+about__skills-content = logo-slide */
+
 .about__skills-content {
-  /* grid-template-columns: repeat(7, max-content); */
-  /* justify-content: center; */
   align-items: center;
   animation: 450s slide infinite linear;
 }
@@ -534,11 +577,6 @@ body {
   border: 1px solid var(--ligth-white-500);
   padding: 40px;
 }
-
-/* about__skills = logo 
-about__skills-content = logo-slide */
-
-/*animacion technology*/
 
 @keyframes slide {
   from {
