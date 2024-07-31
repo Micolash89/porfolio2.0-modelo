@@ -528,7 +528,7 @@ body {
   /* grid-template-columns: repeat(7, max-content); */
   /* justify-content: center; */
   align-items: center;
-  animation: 35s slide infinite linear;
+  animation: 450s slide infinite linear;
 }
 .about__skills-content > div {
   border: 1px solid var(--ligth-white-500);
@@ -546,7 +546,7 @@ about__skills-content = logo-slide */
   }
 
   to {
-    transform: translateX(-450%);
+    transform: translateX(-100%);
   }
 }
 
@@ -555,7 +555,7 @@ about__skills-content = logo-slide */
   position: relative;
 }
 
-.about__skills-content:hover {
+.about__skills:hover > .about__skills-content {
   animation-play-state: paused;
 }
 
@@ -632,4 +632,49 @@ about__skills-content = logo-slide */
 .footer__copy {
   font-size: var(--txt-13);
   font-weight: 500;
+}
+
+/*=============== SCROLL BAR ===============*/
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  /* background-color: hsl(var(--hue), 20%, 85%); */
+  background-color: var(--ligth-grey-700);
+}
+
+::-webkit-scrollbar-thumb {
+  /* background-color: hsl(var(--hue), 20%, 65%); */
+  background-color: var(--dark-black-100);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--dark-black-400);
+  cursor: pointer;
+}
+
+/*=============== SCROLL UP ===============*/
+
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -50%;
+  background-color: var(--dark-black-100);
+  box-shadow: 3px 3px 7px 0px var(--box-shadow-white);
+  display: inline-flex;
+  padding: 6px;
+  font-size: var(--txt-30);
+  color: var(--ligth-white-300);
+  z-index: 5;
+  transition: bottom 0.4s, transform 0.4s, background-color 0.4s;
+  border-radius: var(--radius-4);
+}
+
+.scrollup:hover {
+  transform: translateY(-0.5rem);
+}
+
+/* Show Scroll Up */
+
+.show-scroll {
+  bottom: 3rem;
 }
