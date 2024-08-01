@@ -46,6 +46,16 @@ body {
 }
 
 /*home*/
+
+body {
+  background-image: url("/images/234.jpg");
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-size: 100vw 100vh;
+  /* background-position: ; */
+  background-attachment: fixed;
+}
+
 .main > section > div {
   /* padding: 0 15px; */
   max-width: 1400px;
@@ -279,6 +289,10 @@ body {
   justify-content: center;
   gap: 200px;
   align-items: center;
+  font-size: var(--txt-24);
+  font-style: italic;
+  font-weight: 900;
+  color: var(--dark-black-100);
 }
 
 .about__profile--description > p {
@@ -338,10 +352,8 @@ body {
   content: "---------------------";
   font-weight: 400;
   font-family: "Roboto", sans-serif;
-  text-decoration: line-through; /* Aplica subrayado al texto */
-  text-decoration-color: var(
-    --ligth-white-300
-  ); /* Hace invisible el subrayado */
+  text-decoration: line-through;
+  text-decoration-color: var(--ligth-white-300);
   padding-right: 5px;
   font-size: var(--txt-23);
 }
@@ -354,13 +366,15 @@ body {
 .pcccard {
   max-width: 240px;
   min-width: 240px;
-  max-height: 335px;
-  min-height: 335px;
+  max-height: 345px;
+  min-height: 345px;
   margin: 30px 30px 0;
   background-color: var(--dark-black-100);
   box-shadow: 7px 7px 25px 0px var(--box-shadow-white);
   border-radius: var(--radius-4);
+  font-family: "Space Grotesk", sans-serif !important;
 }
+
 .pcccard__img:hover > img {
   transform: scale(1.2);
   filter: none;
@@ -380,10 +394,6 @@ body {
   font-size: var(--txt-22);
   color: var(--dark-black-100);
   transition: transform 0.6s, scale 0.6s;
-  /* background-color: var(--ligth-white-100); */
-  /* border-radius: 50%; */
-  /* padding: 0 3px; */
-  /* border: 1px solid black; */
 }
 
 .pcccard__img:hover .work__icon {
@@ -398,7 +408,8 @@ body {
 
 .pcccard__detail {
   text-align: center;
-  gap: 10px;
+  gap: 15px;
+  padding-top: 10px;
   color: var(--ligth-grey-600);
   font-size: var(--txt-12);
   font-weight: 600;
@@ -639,7 +650,7 @@ about__skills-content = logo-slide */
 
 /*footer*/
 .footer {
-  background-color: var(--dark-black-600);
+  /* background-color: var(--dark-black-600); */
 }
 
 .footer__container {
