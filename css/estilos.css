@@ -504,7 +504,7 @@ work__imgCarrousel = logo-slide */
   background: linear-gradient(to right, transparent, var(--dark-black-100));
 }
 
-/*technology*/
+/*technology - HABILIDADES*/
 
 .technology {
   padding: 100px;
@@ -518,7 +518,11 @@ work__imgCarrousel = logo-slide */
   color: var(--ligth-grey-600);
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  margin-bottom: 5rem;
+  margin-bottom: 50px;
+}
+
+.technology__title:nth-child(3) {
+  margin-top: 80px;
 }
 
 .technology__title::before {
@@ -538,43 +542,10 @@ work__imgCarrousel = logo-slide */
   margin-top: 5px;
   margin-bottom: 5rem;
 }
+
 .technology__h3::first-letter {
   text-transform: uppercase;
 }
-/* .about__page {
-  padding-bottom: 4rem;
-}
-
-.about__perfil {
-  justify-self: center;
-}
-
-.about__content {
-  row-gap: 4rem;
-}
-
-.about__data {
-  row-gap: 2rem;
-}
-
-.about__info {
-  row-gap: 0.75rem;
-  text-align: center;
-} */
-
-/* .about__description b {
-  color: var(--first-color);
-}
-
-.about__button {
-  justify-self: center;
-} */
-
-/* .about__skills-title {
-  font-size: var(--h3-font-size);
-  text-align: center;
-  margin: 1rem 0;
-} */
 
 .about__skills-img {
   width: 40px;
@@ -646,6 +617,35 @@ about__skills-content = logo-slide */
 .about__skills:after {
   right: 0px;
   background: linear-gradient(to right, transparent, var(--ligth-white-100));
+}
+
+/*--- ACADEMIAS*/
+
+.technology
+  > div
+  > section:last-child
+  > .about__skills
+  > .about__skills-content
+  > div {
+  /* align-items: center;
+  justify-content: center; */
+}
+.technology
+  > div
+  > section:last-child
+  > .about__skills
+  > .about__skills-content
+  > div {
+  padding: 10px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.technology > div > section:last-child img {
+  width: 200px !important;
+
+  /* height: 0px; */
+  /* background-color: aqua; */
 }
 
 /*footer*/
