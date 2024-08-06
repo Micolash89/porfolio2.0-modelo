@@ -2,9 +2,16 @@
 
     /*slide technology*/
 
-    const copy = document.querySelector(".about__skills-content").cloneNode(true)
+    // const copy = document.querySelector(".about__skills-content").cloneNode(true)
 
-    document.querySelector(".about__skills").appendChild(copy);
+    // document.querySelector(".about__skills").appendChild(copy);
+
+    let copy = [];
+
+    document.querySelectorAll(".about__skills-content").forEach(e => copy.push(e.cloneNode(true)));
+
+    document.querySelectorAll(".about__skills").forEach((e, i) => e.appendChild(copy[i]));
+
 
     /*slide porfolio*/
 

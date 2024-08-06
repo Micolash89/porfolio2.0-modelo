@@ -65,6 +65,7 @@ body {
 .home {
   padding: 100px;
   font-family: "Poppins", sans-serif;
+  transition: padding 0.6s ease;
 }
 
 .home__about {
@@ -263,6 +264,7 @@ body {
   padding: 100px;
   background-color: var(--ligth-white-100);
   color: var(--dark-black-600);
+  transition: padding 0.6s ease;
 }
 
 .about__profile--title {
@@ -272,6 +274,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   margin-bottom: 5rem;
+  transition: margin-botton 0.6s ease;
 }
 
 .about__profile--title::before {
@@ -293,12 +296,14 @@ body {
   font-style: italic;
   font-weight: 900;
   color: var(--dark-black-100);
+  transition: gap 0.6s ease;
 }
 
 .about__profile--description > p {
   max-width: 50%;
   font-size: var(--txt-15);
   color: var(--ligth-grey-700);
+  transition: width 0.6s ease;
 }
 
 .about__profile--img {
@@ -337,15 +342,18 @@ body {
 
 .porfolio {
   padding: 100px;
+  transition: padding 0.6s ease;
 }
 
 .porfolio__title {
   text-transform: uppercase;
+  transition: padding-left 0.6s ease;
   font-size: var(--txt-20);
   color: var(--ligth-white-300);
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   margin-bottom: 5rem;
+  transition: margin-botton 0.6s ease;
 }
 
 .porfolio__title::before {
@@ -462,7 +470,7 @@ body {
   text-underline-offset: 5px;
 }
 
-/*---porfolio animation-----*/
+/*---portfolio animation-----*/
 /* work__imgContainerCarrousel = logo 
 work__imgCarrousel = logo-slide */
 
@@ -510,6 +518,7 @@ work__imgCarrousel = logo-slide */
   padding: 100px;
   background-color: var(--ligth-white-100);
   color: var(--dark-black-600);
+  transition: padding 0.6s ease;
 }
 
 .technology__title {
@@ -625,11 +634,18 @@ about__skills-content = logo-slide */
   > div
   > section:last-child
   > .about__skills
-  > .about__skills-content
-  > div {
-  /* align-items: center;
-  justify-content: center; */
+  > .about__skills-content {
+  animation: 150s slide infinite linear;
 }
+
+.technology
+  > div
+  > section:last-child
+  > .about__skills:hover
+  > .about__skills-content {
+  animation-play-state: paused;
+}
+
 .technology
   > div
   > section:last-child
@@ -637,12 +653,13 @@ about__skills-content = logo-slide */
   > .about__skills-content
   > div {
   padding: 10px;
-  height: 100%;
+  min-height: 100%;
+  width: 150px;
   display: flex;
   align-items: center;
 }
 .technology > div > section:last-child img {
-  width: 200px !important;
+  width: 300px !important;
 
   /* height: 0px; */
   /* background-color: aqua; */
@@ -746,4 +763,113 @@ about__skills-content = logo-slide */
 
 .show-scroll {
   bottom: 3rem;
+}
+
+/*mobile*/
+
+@media (max-width: 800px) {
+  .porfolio__cards {
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 700px) {
+  .header__nav {
+    justify-content: center;
+  }
+
+  .header__title {
+    display: none;
+  }
+
+  .home {
+    padding: 15px;
+  }
+
+  .home__about {
+    padding-left: 60px;
+  }
+
+  .about__profile--title {
+    padding-left: 60px;
+    margin-bottom: 15px;
+  }
+
+  .about {
+    padding: 15px;
+  }
+
+  .about__profile--description {
+    gap: 20px;
+  }
+  .about__profile--description > p {
+    max-width: 100%;
+  }
+
+  .porfolio {
+    padding: 15px;
+  }
+
+  .porfolio__title {
+    padding-left: 60px;
+    margin-bottom: 15px;
+  }
+
+  .technology {
+    padding: 15px;
+  }
+
+  .technology__title {
+    padding-left: 60px;
+  }
+
+  /* .about__skills:before {
+    left: -2px;
+  }
+  .about__skills:after {
+    right: 0px;
+  } */
+}
+@media (max-width: 600px) {
+  .home,
+  .home__aboutContainer {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about__profile--description {
+    flex-direction: column;
+  }
+
+  .about__profile--title,
+  .home__about,
+  .porfolio__title,
+  .technology__title {
+    text-align: center;
+    padding: 0;
+  }
+
+  .about__profile--title::before,
+  .home__about::before,
+  .porfolio__title::before,
+  .technology__title::before {
+    display: none;
+  }
+  .about__skills:before,
+  .about__skills:after {
+  }
+}
+@media (max-width: 500px) {
+  .home__name {
+    font-size: var(--txt-60);
+  }
+
+  .pcccard {
+    max-width: none;
+  }
+}
+@media (max-width: 400px) {
+}
+@media (max-width: 300px) {
 }
