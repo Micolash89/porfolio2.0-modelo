@@ -1,10 +1,27 @@
 (() => {
 
+    const copyButton = document.querySelector(".home__email");
+
+    const copyButton2 = document.querySelector(".ri-file-copy-line");
+
+    const copyButtonOk = document.querySelector('.copyButtonOk');
+
+    const email = document.querySelector('.home__email span').textContent;
+
+    copyButton.addEventListener('click', () => {
+        copyButton2.style.display = 'none';
+        copyButtonOk.style.display = 'inline-flex';
+
+        navigator.clipboard.writeText(email.trim());
+
+        setTimeout(() => {
+            copyButton2.style.display = 'inline-flex';
+            copyButtonOk.style.display = 'none';
+        }, 1500);
+
+    })
+
     /*slide technology*/
-
-    // const copy = document.querySelector(".about__skills-content").cloneNode(true)
-
-    // document.querySelector(".about__skills").appendChild(copy);
 
     let copy = [];
 

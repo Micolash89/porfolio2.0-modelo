@@ -89,17 +89,13 @@ body {
   width: fit-content;
 }
 
-.home__email > i {
-  padding: 2px 2px 1px 1px;
-  border-radius: var(--radius-4);
-  font-size: var(--txt-24) !important;
-  transition: background-color 0.4s, color 0.4s;
+.home__email {
+  width: fit-content;
 }
 
-.home__email > i:hover {
-  background-color: var(--ligth-white-100);
-  color: var(--dark-black-100);
-  cursor: pointer;
+.home__email > i {
+  padding: 2px 2px 1px 1px;
+  font-size: var(--txt-24) !important;
 }
 
 .home__email,
@@ -108,6 +104,7 @@ body {
   gap: 7px;
   align-items: center;
   color: var(--ligth-white-300);
+  cursor: pointer;
 }
 
 .home__email > i,
@@ -115,130 +112,43 @@ body {
 .home__github > i {
   font-size: var(--txt-30);
   color: var(--ligth-white-100);
+  transition: background-color 0.4s, color 0.4s;
+  border-radius: var(--radius-4);
+}
+.home__email:hover > i,
+.home__linkedin:hover > i,
+.home__github:hover > i {
+  background-color: var(--ligth-white-100);
+  color: var(--dark-black-100);
+}
+
+.copyButtonOk {
+  display: none;
 }
 
 /*BOTON*/
-.btn-101,
-.btn-101 *,
-.btn-101 :after,
-.btn-101 :before,
-.btn-101:after,
-.btn-101:before {
-  border: 0 solid;
-  box-sizing: border-box;
-}
-.btn-101 {
-  -webkit-tap-highlight-color: transparent;
-  -webkit-appearance: button;
-  background-color: #000;
-  background-image: none;
-  color: #fff;
-  font-size: var(--txt-24);
-  font-weight: 600;
-  line-height: 1.5;
-  margin: 0;
-  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
-  padding: 0;
-  text-transform: uppercase;
-}
-.btn-101:disabled {
-  cursor: default;
-}
-.btn-101:-moz-focusring {
-  outline: auto;
-}
-.btn-101 svg {
-  vertical-align: middle;
-}
-.btn-101 [hidden] {
-  display: none;
-}
-.btn-101 {
-  --thickness: 0.3rem;
-  --roundness: 1.2rem;
-  --opacity: 0.6;
-  -webkit-backdrop-filter: blur(100px);
-  backdrop-filter: blur(100px);
-  background: none;
-  background: var(--ligth-white-100);
-  border: none;
-  border-radius: var(--roundness);
-  color: var(--dark-black-100);
-  cursor: pointer;
-  display: block;
-  font-size: var(--txt-14);
-  font-weight: 400;
-  padding: 0.8rem 2rem;
-  position: relative;
-}
-.btn-101:hover {
-  background: var(--ligth-white-100);
-  filter: brightness(1.2);
-}
-.btn-101:active {
-  --opacity: 0;
-  background: var(--ligth-white-100);
-}
-.btn-101 svg {
-  border-radius: var(--roundness);
-  display: block;
-  filter: url(#glow);
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-.btn-101 rect {
-  fill: none;
-  stroke: var(--dark-black-100);
-  stroke-width: var(--thickness);
-  rx: var(--roundness);
-  stroke-linejoin: round;
-  stroke-dasharray: 185%;
-  stroke-dashoffset: 80;
-  -webkit-animation: snake 2s linear infinite;
-  animation: snake 2s linear infinite;
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 0.2s;
-  width: 100%;
-}
-.btn-101:hover rect {
-  -webkit-animation-play-state: running;
-  animation-play-state: running;
-  opacity: var(--opacity);
-}
-@-webkit-keyframes snake {
-  to {
-    stroke-dashoffset: 370%;
-  }
-}
-@keyframes snake {
-  to {
-    stroke-dashoffset: 370%;
-  }
-}
 
-.home__download {
+.home__downloadButton {
   width: fit-content;
   text-transform: uppercase;
-  background-color: var(--ligth-white-100);
+  background-color: var(--ligth-white-200);
   color: var(--dark-black-100);
   font-weight: 600;
   border-radius: var(--radius-30);
-  box-shadow: 4px 4px 20px 0px var(--box-shadow-white);
+  box-shadow: 5px 5px 15px 0px var(--box-shadow-white);
   cursor: pointer;
-  transition: box-shadow 0.6s;
+  transition: box-shadow 0.6s ease, background-color 0.6s ease, color 0.6s ease;
+  padding: 15px;
 }
 
-.home__download:hover {
+.home__downloadButton:hover {
   box-shadow: -3px -3px 15px 0px var(--box-shadow-white);
+  background-color: var(--dark-black-100);
+  color: var(--ligth-white-100);
+  outline: 1px solid var(--ligth-white-100);
 }
 
-.home__download:active {
+.home__downloadButton:active {
   box-shadow: inset -3px -3px 10px 0px var(--box-shadow-black);
 }
 
