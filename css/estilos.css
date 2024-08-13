@@ -33,6 +33,22 @@ body {
   color: var(--ligth-white-100);
   font-weight: 400;
   font-size: var(--txt-17);
+  position: relative;
+}
+
+.header__nav--items > li > a::after {
+  content: ""; /* Añade contenido al pseudo-elemento */
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--ligth-white-100);
+  transition: width 1s;
+}
+
+.header__nav--items > li > a:hover::after {
+  width: 100%;
 }
 
 .header__menu {
@@ -150,6 +166,25 @@ body {
 
 .home__downloadButton:active {
   box-shadow: inset -3px -3px 10px 0px var(--box-shadow-black);
+}
+
+.pfd-view {
+  position: absolute;
+  display: flex;
+  top: 0;
+  padding: 0 100px;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  backdrop-filter: blur(1.5px);
+  z-index: 99;
+  display: none;
+}
+
+.pfd-view > iframe {
+  width: 100%;
+  height: 100%;
 }
 
 /*about*/

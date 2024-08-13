@@ -47,4 +47,44 @@
     }
     window.addEventListener('scroll', scrollUp)
 
+
+    /*pdf frame position absolute , scroll top en document .pfd-view 
+    // CERRAR EL MODAL HACIENDO CLICK ENCERRRAR
+  
+    document.querySelector('.modal-image .close').onclick = () => {
+        document.querySelector('.modal-image').style.display = 'none';
+        document.body.classList.remove("no-scroll"); // Habilitar scroll
+    };
+
+    // CERRAR EL MODAL HACIENDO CLICK FUERA DE LA IMAGEN
+    document.querySelector('.modal-image').addEventListener('click', (event) => {
+        if (event.target.classList.contains('modal-image')) {
+            document.querySelector('.modal-image').style.display = 'none';
+            document.body.classList.remove("no-scroll"); // Habilitar scroll
+        }
+    });
+
+    // ABRIR RESUMEN MODAL  ver solo con estas lineas de codigo .pfd-view {
+
+    const resumenBtn = document.querySelector('.btn-resumen');
+    const resumenModal = document.querySelector('.modal-resumen');
+    const resumenClose = resumenModal.querySelector('.close');
+
+    resumenBtn.addEventListener('click', () => {
+        resumenModal.style.display = 'block';
+        document.body.classList.add("no-scroll"); // Deshabilitar scroll
+    });
+
+    resumenClose.addEventListener('click', () => {
+        resumenModal.style.display = 'none';
+        document.body.classList.remove("no-scroll"); // Habilitar scroll
+    });
+
+    resumenModal.addEventListener('click', (event) => {
+        if (event.target === resumenModal) {
+            resumenModal.style.display = 'none';
+            document.body.classList.remove("no-scroll"); // Habilitar scroll
+        }
+    });
+*/
 })();
