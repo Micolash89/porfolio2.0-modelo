@@ -57,6 +57,29 @@
     }
     window.addEventListener('scroll', bgHeader)
 
+    /* menu */
+
+    const menu = document.querySelector('.header__nav');
+    const menuButton = document.querySelector('.open-menu');
+    const closeMenu = document.querySelector('.close-menu');
+
+    menuButton.addEventListener('click', () => {
+        menu.classList.add('menu-show')
+        //inline-bloxk
+        closeMenu.style.display = "inline-block";
+        menuButton.style.display = "none";
+        menu.classList.add('menu-show');
+    });
+
+    closeMenu.addEventListener('click', () => {
+        //inline-bloxk
+        closeMenu.style.display = "none";
+        menuButton.style.display = "inline-block";
+        menu.classList.remove('menu-show')
+    });
+
+
+
 
     /*pdf frame position absolute , scroll top en document .pfd-view 
     // CERRAR EL MODAL HACIENDO CLICK ENCERRRAR
