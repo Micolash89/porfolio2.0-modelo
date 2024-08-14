@@ -280,13 +280,6 @@ body {
   transition: padding 0.6s ease;
 }
 
-.porfolio > div {
-  /* display: flex;
-  flex-direction: column; */
-  /* 
-  margin: 0 auto; */
-}
-
 .porfolio__title {
   text-transform: uppercase;
   transition: padding-left 0.6s ease;
@@ -736,6 +729,7 @@ body {
   .about__profile--description {
     gap: 20px;
   }
+
   .about__profile--description > p {
     max-width: 100%;
   }
@@ -757,6 +751,7 @@ body {
     padding-left: 60px;
   }
 }
+
 @media (max-width: 600px) {
   .home,
   .home__aboutContainer {
@@ -783,10 +778,8 @@ body {
   .technology__title::before {
     display: none;
   }
-  .about__skills:before,
-  .about__skills:after {
-  }
 }
+
 @media (max-width: 500px) {
   .home__name {
     font-size: var(--txt-60);
