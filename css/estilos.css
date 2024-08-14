@@ -16,6 +16,15 @@ body {
 .header {
   width: 100%;
   padding: 30px;
+  position: fixed;
+  transition: background-color 0.6s ease, padding 0.6s ease;
+}
+
+.bg-header {
+  background-color: var(--dark-black-100);
+  z-index: 20;
+  box-shadow: 15px 0px 15px 5px var(--box-shadow-white);
+  padding: 30px 100px;
 }
 
 .header__nav {
@@ -271,6 +280,13 @@ body {
   transition: padding 0.6s ease;
 }
 
+.porfolio > div {
+  /* display: flex;
+  flex-direction: column; */
+  /* 
+  margin: 0 auto; */
+}
+
 .porfolio__title {
   text-transform: uppercase;
   transition: padding-left 0.6s ease;
@@ -293,8 +309,11 @@ body {
 }
 
 .porfolio__cards {
+  gap: 30px;
+  justify-content: center;
   flex-wrap: wrap;
-  justify-content: left;
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
 }
 
 .pcccard {
@@ -302,7 +321,7 @@ body {
   min-width: 240px;
   max-height: 345px;
   min-height: 345px;
-  margin: 30px 30px 0;
+  /* margin: 30px 30px 0; */
   background-color: var(--dark-black-100);
   box-shadow: 7px 7px 25px 0px var(--box-shadow-white);
   border-radius: var(--radius-4);
@@ -675,13 +694,19 @@ body {
 }
 
 /*mobile*/
-
-@media (max-width: 800px) {
+@media (max-width: 1100px) {
   .porfolio__cards {
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
   }
+
+  .bg-header {
+    padding: 30px;
+  }
 }
+
 @media (max-width: 700px) {
   .header__nav {
     justify-content: center;
@@ -692,7 +717,7 @@ body {
   }
 
   .home {
-    padding: 15px;
+    padding: 70px 15px 15px 15px;
   }
 
   .home__about {

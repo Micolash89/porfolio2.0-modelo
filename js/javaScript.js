@@ -47,6 +47,16 @@
     }
     window.addEventListener('scroll', scrollUp)
 
+    /*header*/
+
+    const bgHeader = () => {
+        const header = document.getElementById('header')
+        // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
+        this.scrollY >= 50 ? header.classList.add('bg-header')
+            : header.classList.remove('bg-header')
+    }
+    window.addEventListener('scroll', bgHeader)
+
 
     /*pdf frame position absolute , scroll top en document .pfd-view 
     // CERRAR EL MODAL HACIENDO CLICK ENCERRRAR
