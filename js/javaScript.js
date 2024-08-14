@@ -73,21 +73,27 @@
             document.body.classList.remove("no-scroll"); // Habilitar scroll
         }
     });
+   
+    */
 
     // ABRIR RESUMEN MODAL  ver solo con estas lineas de codigo .pfd-view {
 
-    const resumenBtn = document.querySelector('.btn-resumen');
-    const resumenModal = document.querySelector('.modal-resumen');
-    const resumenClose = resumenModal.querySelector('.close');
+    const resumenBtn = document.querySelector('.home__downloadButton');
+    const resumenModal = document.querySelector('.pfd-view');
+    const resumenClose = resumenModal.querySelector('.close-button');
 
     resumenBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Desplazamiento suave
+        });
         resumenModal.style.display = 'block';
         document.body.classList.add("no-scroll"); // Deshabilitar scroll
     });
 
     resumenClose.addEventListener('click', () => {
         resumenModal.style.display = 'none';
-        document.body.classList.remove("no-scroll"); // Habilitar scroll
+        document.body.classList.remove("no-scroll");
     });
 
     resumenModal.addEventListener('click', (event) => {
@@ -96,5 +102,5 @@
             document.body.classList.remove("no-scroll"); // Habilitar scroll
         }
     });
-*/
+
 })();
