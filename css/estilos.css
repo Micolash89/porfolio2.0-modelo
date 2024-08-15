@@ -96,9 +96,12 @@ body {
 
 .home__about::before {
   content: "-------------------";
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
   text-decoration: line-through;
-  text-decoration-color: var(--ligth-white-300);
   padding-right: 5px;
+  font-size: var(--txt-23);
+  text-decoration-color: var(--ligth-white-300);
 }
 
 .home__name {
@@ -768,12 +771,16 @@ body {
   }
 }
 @media (max-width: 700px) {
-  .home {
-    padding: 70px 15px 15px 15px;
-  }
-
   .home__about {
     padding-left: 60px;
+  }
+
+  .home,
+  .home__aboutContainer {
+    padding: 70px 15px 15px 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   .about__profile--title {
