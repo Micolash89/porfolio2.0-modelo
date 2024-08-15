@@ -711,6 +711,10 @@ body {
   .bg-header {
     padding: 30px;
   }
+
+  .pfd-view {
+    padding: 0 50px 0px 0;
+  }
 }
 
 @media (max-width: 800px) {

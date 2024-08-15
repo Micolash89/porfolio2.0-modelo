@@ -65,21 +65,28 @@
 
     menuButton.addEventListener('click', () => {
         menu.classList.add('menu-show')
-        //inline-bloxk
         closeMenu.style.display = "inline-block";
         menuButton.style.display = "none";
         menu.classList.add('menu-show');
     });
 
-    closeMenu.addEventListener('click', () => {
-        //inline-bloxk
+    // closeMenu.addEventListener('click', (e) => {
+
+    //     if (e.target == closeMenu) {
+    //         closeMenu.style.display = "none";
+    //         menuButton.style.display = "inline-block";
+    //         menu.classList.remove('menu-show')
+    //         console.log("click");
+    //     }
+    // });
+
+    menuButton.addEventListener('mouseleave', () => {
+
         closeMenu.style.display = "none";
         menuButton.style.display = "inline-block";
         menu.classList.remove('menu-show')
+        console.log("mouseleave");
     });
-
-
-
 
     /*pdf frame position absolute , scroll top en document .pfd-view 
     // CERRAR EL MODAL HACIENDO CLICK ENCERRRAR
