@@ -148,6 +148,7 @@ body {
   transition: background-color 0.4s, color 0.4s;
   border-radius: var(--radius-4);
 }
+
 .home__email:hover > i,
 .home__linkedin:hover > i,
 .home__github:hover > i {
@@ -265,6 +266,7 @@ body {
   background-color: var(--dark-black-100);
   padding: 10px;
 }
+
 .about__profile--img > img {
   width: 150px;
   height: 200px;
@@ -273,6 +275,7 @@ body {
   filter: grayscale(1);
   transition: transform 0.6s ease;
 }
+
 .about__profile--img > img:hover {
   transform: translateY(-30px) translateX(-30px);
   filter: grayscale(0);
@@ -458,6 +461,7 @@ body {
   left: 0px;
   background: linear-gradient(to left, transparent, var(--dark-black-100));
 }
+
 .work__imgContainerCarrousel:after {
   right: 0px;
   background: linear-gradient(to right, transparent, var(--dark-black-100));
@@ -521,6 +525,7 @@ body {
 .NetBeans {
   transform: scale(1.5);
 }
+
 .NetBeans:hover {
   transform: translateY(-0.5rem) scale(1.5);
   filter: grayscale(0);
@@ -531,6 +536,7 @@ body {
   align-items: center;
   animation: 450s slide infinite linear;
 }
+
 .about__skills-content > div {
   border: 1px solid var(--ligth-white-500);
   padding: 40px;
@@ -570,6 +576,7 @@ body {
   left: 0px;
   background: linear-gradient(to left, transparent, var(--ligth-white-100));
 }
+
 .about__skills:after {
   right: 0px;
   background: linear-gradient(to right, transparent, var(--ligth-white-100));
@@ -605,6 +612,7 @@ body {
   display: flex;
   align-items: center;
 }
+
 .technology > div > section:last-child img {
   width: 300px !important;
 }
@@ -770,19 +778,22 @@ body {
     font-size: var(--txt-40);
   }
 }
+
 @media (max-width: 700px) {
-  .home__about {
-    padding-left: 60px;
+  .home {
+    padding: 70px 15px 15px 15px;
   }
 
   .home,
   .home__aboutContainer {
-    padding: 70px 15px 15px 15px;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
 
+  .home__about::before {
+    content: "";
+  }
   .about__profile--title {
     padding-left: 60px;
     margin-bottom: 15px;
