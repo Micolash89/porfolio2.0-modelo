@@ -83,9 +83,10 @@ body {
 }
 
 .home {
-  padding: 100px;
+  padding: 100px 100px 200px 100px;
   font-family: "Poppins", sans-serif;
   transition: padding 0.6s ease;
+  
 }
 
 .home__about {
@@ -163,12 +164,16 @@ body {
 /*BOTON*/
 
 .home__downloadButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: fit-content;
+  gap: 7px;
   text-transform: uppercase;
   background-color: var(--ligth-white-200);
   color: var(--dark-black-100);
   font-weight: 600;
-  border-radius: var(--radius-30);
+  border-radius: var(--radius-4);
   box-shadow: 5px 5px 15px 0px var(--box-shadow-white);
   cursor: pointer;
   transition: box-shadow 0.6s ease, background-color 0.6s ease, color 0.6s ease;
@@ -254,30 +259,31 @@ body {
 
 .about__profile--description > p {
   max-width: 50%;
-  font-size: var(--txt-15);
+  font-size: var(--txt-17);
   color: var(--ligth-grey-700);
   transition: width 0.6s ease;
 }
 
 .about__profile--img {
-  width: 150px;
-  height: 200px;
+  width: 200px;
+  height: 250px;
   outline: 2px solid var(--dark-black-600);
   background-color: var(--dark-black-100);
   padding: 10px;
 }
 
 .about__profile--img > img {
-  width: 150px;
-  height: 200px;
-  min-width: 150px;
+  width: 200px;
+  height: 250px;
+  min-width: 200px;
   object-fit: cover;
   filter: grayscale(1);
   transition: transform 0.6s ease;
+  transform: translateY(20px) translateX(20px);
 }
 
 .about__profile--img > img:hover {
-  transform: translateY(-30px) translateX(-30px);
+  transform: translateY(-40px) translateX(-40px);
   filter: grayscale(0);
 }
 
@@ -295,7 +301,7 @@ body {
 
 /*porfolio*/
 .porfolio {
-  padding: 100px;
+  padding: 200px 100px;
   transition: padding 0.6s ease;
 }
 
